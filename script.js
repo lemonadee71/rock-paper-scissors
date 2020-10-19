@@ -70,11 +70,11 @@ const game = () => {
   }
 
   if (score > Math.floor((rounds - ties) / 2)) {
-    alert(`Player: ${score}, Computer: ${rounds - score - ties}. Player wins`)
+    alert(`Player: ${score}, Computer: ${rounds - score - ties}. Player wins. Restart page to play again.`)
   } else if (score < Math.floor((rounds - ties) / 2) ) {
-    alert(`Player: ${score}, Computer: ${rounds - score - ties}. Computer wins`)
+    alert(`Player: ${score}, Computer: ${rounds - score - ties}. Computer wins. Restart page to play again.`)
   } else {
-    alert(`Player: ${score}, Computer: ${rounds - score - ties}. It's a tie.`)
+    alert(`Player: ${score}, Computer: ${rounds - score - ties}. It's a tie. Restart page to play again.`)
   }
 
   console.log(choices)
