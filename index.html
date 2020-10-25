@@ -3,9 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <style>
+      .buttons {
+        width: 265px;
+        margin: 5px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .buttons > button {
+        padding: 2px;
+        width: 80px;   
+      }
+      .buttons kbd {
+        display: block;
+        padding: 2px;
+      }
+      #window {
+        width: 250px;
+        height: 30px;
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid #000;
+        border-radius: 5px ;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
+    <div id="window">Click buttons or press keys to start a game!</div>
+    <div class="buttons">
+      <button data-key="65" id="rock"><kbd>A</kbd><p>Rock</p></button>
+      <button data-key="83" id="paper"><kbd>S</kbd><p>Paper</p></button>
+      <button data-key="68" id="scissors"><kbd>D</kbd><p>Scissors</p></button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
